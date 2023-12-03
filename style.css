@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --main-color: #360369;
+    --white-color: #ffffff;
+    --btn-bg-color: #270846;
+    ;
+    --purple-color: #360369;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+#landing-page {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--main-color);
+    color: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    text-align: center;
+}
+
+.box h1 {
+    font-size: 6vw;
+}
+
+.box > #fetchBtn {
+    width: 55%;
+    padding: 15px 10px;
+    border-radius: 10px;
+    font-size: 1.2vw;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#fetchBtn:hover {
+    outline: 1px solid #fff;
+    color: var(--white-color);
+    background-color: var(--btn-bg-color);
+}
+
+.box > #fetchBtn:active {
+    transform: scale(0.96);
+}
+
+#data-page {
+    width: 100vw;
+    height: 100vh;
+}
+
+.container-top {
+    color: var(--white-color);
+    background-color: var(--main-color);
+    height: 70%;
+    padding: 30px;
+}
+
+.container-top h2 {
+    font-size: 40px;
+}
+
+.container-top .para {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.container-top .location {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.lat,
+.long {
+    padding: 10px 40px;
+    background-color: var(--btn-bg-color);
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.map {
+    height: 68%;
+}
+
+.container-bottom {
+    height: 30%;
+    padding: 30px;
+}
+
+.container-bottom h2 {
+    color: var(--purple-color);
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.data {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.data-box {
+    padding: 10px 40px;
+    color: #ffffff;
+    background-color: var(--main-color);
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* mobile view csss */
+@media (max-width: 575.98px) { 
+    .container-top h2 {
+        font-size: 5vw !important;
+    }
+
+    .container-top .para {
+        font-size: 3.5vw !important;
+    }
+
+    .lat,
+    .long {
+        font-size: 2.2vw !important;
+    }
+
+    .map {
+        height: 77% !important;
+    }
+
+    .container-bottom h2 {
+        font-size: 5vw !important;
+    }
+
+    .data-box {
+        font-size: 2.5vw !important;
+    }
+
+    .data {
+        gap: 13px !important;
+    }
+ }
+
+@media (max-width: 767.98px) { 
+    .map {
+        height: 69%;
+    }
+
+    .container-top h2 {
+        font-size: 35px;
+    }
+
+    .container-top .para {
+        font-size: 19px;
+    }
+
+    .lat,
+    .long {
+        font-size: 18px;
+    }
+
+    .container-bottom h2 {
+        font-size: 28px;
+    }
+
+    .data-box {
+        font-size: 15px;
+    }
+
+    .data {
+        gap: 20px;
+    }
+ }
+
+@media (max-width: 991.98px) { 
+    .box h1 {
+        font-size: 8vw;
+    }
+
+    .box > #fetchBtn {
+        font-size: 2vw;
+    }
+ }
